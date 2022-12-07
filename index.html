@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <form class="form-control control">
+                <fieldset class="changer">
+                  <label for="light"></label>
+                  <input type="radio" name="theme" style="color: #657adfa6;" id="light" checked>
+                  <label for="dark"></label>
+                  <input type="radio" name="theme" style="color: #8a8ad0;" id="dark">
+                  <label for="BabyPink"></label>
+                  <input type="radio" name="theme" style="color: #d57eb9;" id="BabyPink">
+                  <label for="green"></label>
+                  <input type="radio" name="theme" style="color: #5f8d5f;" id="green">
+                  <label for="orange"></label>
+                  <input type="radio" name="theme" style="color: #dbceb5;" id="orange">
+                </fieldset>
+            </form>
+        </div>
+        <div class="icon">
+            <span onclick="add()"><i class="fas fa-plus"></i></span>
+            <span onclick="deleteData()"><i class="fas fa-trash-alt"></i></span>
+        </div>
+    </div>
+    <div id="add">
+        <textarea name="text" id="text" cols="39" rows="15" style="border: none;"></textarea>    
+    </div>
+    <button id="button" style="display: none;" onclick="addContent()">ADD-CONTENT</button>
+
+    <div id="add-container">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: grey;
+    width: 100%;
+    display: flex;
+}
+
+.changer{
+    border: none;
+}
+
+#add{
+    display: none;
+    border: 20px solid grey;
+    margin-top: 2rem;
+    position: relative;
+    left: 35%;
+}
+
+#add-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#cont{
+    border: none;
+}
+
+#inner{
+    margin-top: 2rem;
+    min-height: 200px;
+    width: 20%;
+    border: 10px solid grey;
+}
