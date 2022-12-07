@@ -30,7 +30,7 @@
     border: none;
 }
 
-#inner{
+.inner{
     margin-top: 2rem;
     min-height: 200px;
     width: 20%;
