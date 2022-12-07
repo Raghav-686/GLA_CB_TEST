@@ -15,11 +15,12 @@ function addContent()
     container.style.display = "none";
     button.style.display = "none";
     console.log(document.getElementById('text').value);
-    str+=`<div id="inner">
+    str+=`<div class="inner" id="${id}">
             <div class="delete"></div>
-    <textarea name="" id="cont" cols="36" rows="12">${document.getElementById('text').value}</textarea>
+    <textarea name="" onmouseover="myFunction(${id})" id="cont" cols="36" rows="12">${document.getElementById('text').value}</textarea>
         </div>`;
         document.getElementById('text').value="";
+        id++;
     document.getElementById('add-container').innerHTML = str;    
 }
 
@@ -29,14 +30,14 @@ function deleteData()
      console.log("gbrejbhgerj");
 }
 
-document.getElementById('inner').addEventListener("click", myFunction);
+// document.getElementById('inner').addEventListener("click", myFunction);
 
-function myFunction()
+function myFunction(id)
 {
     console.log("cjdshjvghjrgh")
     if(flag == true)
     {
-        document.getElementById('inner').style.display = "none";
+        document.getElementById(id).style.display = "none";
     }
-    // flag = false;
+    flag = false;
 }
